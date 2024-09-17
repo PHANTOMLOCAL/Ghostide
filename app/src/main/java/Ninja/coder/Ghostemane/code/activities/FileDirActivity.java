@@ -244,6 +244,11 @@ public class FileDirActivity extends BaseCompat
       initStartApp();
     }
   }
+  
+  @Override
+  public void onBackPressed() {
+      finishAffinity();
+  }       
 
   private void initialize(Bundle _savedInstanceState) {
     navs = findViewById(R.id.navs);
